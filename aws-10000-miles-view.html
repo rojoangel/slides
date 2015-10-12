@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Amazon web services - A 10,000 miles view</title>
+
+		<meta name="description" content="An overview of Amazon web services">
+		<meta name="author" content="Angel Rojo & Angel Saldaña">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="http://i.ytimg.com/vi/a1KstUzA9nI/maxresdefault.jpg">
+					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+						<h1>Amazon Web Services</h1>
+						<h3>A 10,000 miles view</h3>
+						<p>
+							<small>
+								Created by
+								<br/>
+								<a href="https://www.linkedin.com/in/asaldalop">Angel Saldaña</a> / <a href="https://twitter.com/rojo_angel">@rojo_angel</a>
+								<br/>
+								<a href="https://www.linkedin.com/in/angelrojo">Angel Rojo</a> / <a href="https://twitter.com/rojo_angel">@rojo_angel</a>
+							</small>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>What is AWS?</h2>
+					<blockquote cite="https://aws.amazon.com/what-is-aws/" style="width:100%">
+						&ldquo;Amazon Web Services (AWS) is a secure cloud services platform,
+						offering compute power, database storage, content delivery and other
+						functionality to help businesses scale and grow&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Web App Infrastructure Needs</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Need</th>
+								<th>AWS Service</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Computation</td>
+								<td>?</td>
+							</tr>
+							<tr>
+								<td>Scaling</td>
+								<td>?</td>
+							</tr>
+							<tr>
+								<td>Storage</td>
+								<td>?</td>
+							</tr>
+							<tr>
+								<td>CDN</td>
+								<td>?</td>
+							</tr>
+							<tr>
+								<td>Database</td>
+								<td>?</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section id="computation">
+					<section>
+						<h2>Computation</h2>
+					</section>
+
+					<section>
+						<h2>Amazon EC2</h2>
+						<h4>Virtual Servers</h4>
+						<blockquote cite="https://aws.amazon.com/ec2/" style="width:100%">
+							&ldquo;Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Amazon ECS</h2>
+						<h4>Containers</h4>
+						<blockquote cite="https://aws.amazon.com/ecs/" style="width:100%">
+							&ldquo;Amazon EC2 Container Service (ECS) is a highly scalable,
+							high performance container management service that supports Docker containers
+							and allows you to easily run applications on a managed cluster of Amazon EC2 instances&rdquo;
+						</blockquote>
+						<ul>
+							<li>integrated with Amazon EC2 Container Registry (ECR)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>AWS Elastic Beanstalk</h2>
+						<h4>1-Click Web App Deployment</h4>
+						<blockquote cite="https://aws.amazon.com/elasticbeanstalk/" style="width:100%">
+							&ldquo;You can simply upload your code and Elastic Beanstalk
+							automatically handles the deployment, from capacity provisioning,
+							load balancing, auto-scaling to application health monitoring.&rdquo;
+						</blockquote>
+						<ul>
+							<li>developments in: Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker</li>
+							<li>get deployed to: Apache, Nginx, Passenger, and IIS</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Scale</h2>
+					</section>
+
+					<section>
+						<h2>Elastic Load Balancing</h2>
+						<blockquote cite="https://aws.amazon.com/elasticloadbalancing/" style="width:100%">
+							&ldquo;Elastic Load Balancing automatically distributes
+							incoming application traffic across multiple Amazon EC2 instances
+							(...) seamlessly providing the required amount of load balancing
+							capacity needed to distribute application traffic.&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Auto Scaling</h2>
+						<blockquote cite="https://aws.amazon.com/autoscaling/" style="width:100%">
+							&ldquo;Auto Scaling helps you maintain application availability
+							and allows you to scale your Amazon EC2 capacity up or down
+							automatically according to conditions you define.&rdquo;
+						</blockquote>
+						<ul>
+							<li>increase capacity during demand spikes</li>
+							<li>decrease capacity during lulls to reduce costs</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>AWS Computation Services</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Category</th>
+									<th>AWS Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Virtual Servers</td>
+									<td>Amazo EC2</td>
+								</tr>
+								<tr>
+									<td>Containers</td>
+									<td>Amazon EC3, Amazon ECR</td>
+								</tr>
+								<tr>
+									<td>1-Click Web App Deployment</td>
+									<td>AWS Elastic Beanstalk</td>
+								</tr>
+								<tr>
+									<td>Scaling</td>
+									<td>Elastic Load Balancing, Auto Scaling</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section id="storage">
+					<section>
+						<h2>Storage and Content Delivery</h2>
+					</section>
+
+					<section>
+						<h2>Amazon S3</h2>
+						<h4>Object Storage</h4>
+						<blockquote cite="https://aws.amazon.com/s3/" style="width:100%">
+							&ldquo;Amazon Simple Storage Service (Amazon S3), provides
+							developers and IT teams with secure, durable, highly-scalable
+							object storage.&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Amazon EBS</h2>
+						<h4>Block Storage</h4>
+						<blockquote cite="https://aws.amazon.com/ebs/" style="width:100%">
+							&ldquo;Amazon Elastic Block Store (Amazon EBS) provides
+							persistent block level storage volumes for use with Amazon EC2
+							instances in the AWS Cloud.&rdquo;
+						</blockquote>
+						<ul>
+							<li>high availability and durability</li>
+							<li>EBS volumes are automatically replicated within its Availability Zone</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Amazon EFS</h2>
+						<h4>File System Storage</h4>
+						<blockquote cite="https://aws.amazon.com/efs/" style="width:100%">
+							&ldquo;Amazon Elastic File System (Amazon EFS) is a file storage service for Amazon EC2 instances.
+							Amazon EFS is easy to use and provides a simple interface that allows you
+							to create and configure file systems quickly and easily.
+							With Amazon EFS, storage capacity is elastic, growing and shrinking automatically (...).&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Amazon CloudFront</h2>
+						<h4>Content Delivery Network</h4>
+						<blockquote cite="https://aws.amazon.com/cloudfront/" style="width:100%">
+							&ldquo;Amazon CloudFront is a content delivery web service.
+							It integrates with other Amazon Web Services products
+							to give developers and businesses an easy way to distribute content
+							to end users with low latency, high data transfer speeds (...).&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Amazon Glacier</h2>
+						<h4>Archive Storage</h4>
+						<blockquote cite="https://aws.amazon.com/glacier/" style="width:100%">
+							&ldquo;Amazon Glacier is a secure, durable, and extremely
+							low-cost storage service for data archiving and long-term backup.
+							(...) Amazon Glacier is optimized for infrequently accessed data
+							where a retrieval time of several hours is suitable.&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>AWS Storage Gateway</h2>
+						<h4>Hybrid Storage Integration</h4>
+						<blockquote cite="https://aws.amazon.com/storagegateway/" style="width:100%">
+							&ldquo;The AWS Storage Gateway is a service connecting
+							an on-premises software appliance with cloud-based storage
+							<!-- to provide seamless and secure integration between
+							an organization’s on-premises IT environment and
+							AWS’s storage infrastructure -->.&rdquo;
+						</blockquote>
+						<p style="text-align:left">Supports three configurations:</p>
+						<ul>
+							<li><b>Gateway-Cached Volumes</b></li> <!-- on-premises: frequently accessed | Amazon S3: primary data -->
+							<li><b>Gateway-Stored Volumes</b></li> <!-- on-premises: primary data | Amazon S3: backup -->
+							<li><b>Gateway-Virtual Tape Library (VTL)</b>: can be backed by Amazon S3 or Amazon Glacier</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>AWS Storage and Content Delivery Services</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Category</th>
+									<th>AWS Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Object Storage</td>
+									<td>Amazon S3</td>
+								</tr>
+								<tr>
+									<td>Block Storage</td>
+									<td>Amazon EBS</td>
+								</tr>
+								<tr>
+									<td>File System Storage</td>
+									<td>Amazon Elastic File System (EFS)</td>
+								</tr>
+								<tr>
+									<td>CDN</td>
+									<td>Amazon CloudFront</td>
+								</tr>
+								<tr>
+									<td>Archive Storage</td>
+									<td>Amazon Glacier</td>
+								</tr>
+								<tr>
+									<td>Integrated Storage</td>
+									<td>AWS Storage Gateway</td>
+								</tr>
+								<tr>
+									<td>Data Transport</td>
+									<td>AWS Import/Export</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section id="database">
+					<section>
+						<h2>Database</h2>
+					</section>
+
+					<section>
+						<h2>Amazon RDS</h2>
+						<h4>Relational</h4>
+						<blockquote cite="https://aws.amazon.com/rds/" style="width:100%">
+							&ldquo;Amazon Relational Database Service (Amazon RDS) (...)
+							provides cost-efficient and resizable capacity while managing
+							time-consuming database administration tasks.&rdquo;
+						</blockquote>
+						<ul>
+							<li>Amazon Aurora</li>
+							<li>Oracle</li>
+							<li>Microsoft SQL Server</li>
+							<li>PostgreSQL</li>
+							<li>MySQL</li>
+							<li>MariaDB</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>AWS Database Migration Service</h2>
+						<h4>Database Migration</h4>
+						<blockquote cite="https://aws.amazon.com/dms/" style="width:100%">
+							&ldquo;AWS Database Migration Service helps you migrate databases to AWS easily and securely.&rdquo;
+						</blockquote>
+						<ul>
+							<li>homegenous migration</li>
+							<li>heterogenous migration</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Amazon DynamoDB</h2>
+						<h4>NoSQL</h4>
+						<blockquote cite="https://aws.amazon.com/dynamodb/" style="width:100%">
+							&ldquo;Amazon DynamoDB is a fast and flexible NoSQL database service
+							for all applications that need consistent, single-digit millisecond
+							latency at any scale.&rdquo;
+						</blockquote>
+						<ul>
+							<li>document store model</li>
+							<li>key-value store model</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Amazon ElastiCache</h2>
+						<h4>NoSQL</h4>
+						<blockquote cite="https://aws.amazon.com/elasticache/" style="width:100%">
+							&ldquo;(...) improves the performance of web applications by allowing you
+							to retrieve information from fast, managed, in-memory caches,
+							instead of relying entirely on slower disk-based databases.&rdquo;
+						</blockquote>
+						<ul>
+							<li>Memcached</li>
+							<li>Redis</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>AWS Database Services</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Category</th>
+									<th>AWS Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Relational</th>
+									<th>Amazon RDS</th>
+								</tr>
+								<tr>
+									<td>Database Migration</td>
+									<td>AWS Database Migration Service</td>
+								</tr>
+								<tr>
+									<td>NoSQL</td>
+									<td>Amazon DynamoDB</td>
+								</tr>
+								<tr>
+									<td>Caching</td>
+									<td>Amazon ElastiCache</td>
+								</tr>
+								<tr>
+									<td>Data Warehouse</td>
+									<td>Amazon Redshift</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<h2>Web App Infrastructure Needs</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Need</th>
+								<th>AWS Service</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Computation</td>
+								<td>ECS, EC2 (ECR)</td>
+							</tr>
+							<tr>
+								<td>Scaling</td>
+								<td>Elastic Load Balancing, Auto Scaling</td>
+							</tr>
+							<tr>
+								<td>Storage</td>
+								<td>S3, EBS, EFS, AWS Store Gateway, Amazon Glacier</td>
+							</tr>
+							<tr>
+								<td>CDN</td>
+								<td>Cloudfront</td>
+							</tr>
+							<tr>
+								<td>Database</td>
+								<td>RDS (RMS), Amazon DynamoDB, Amazon ElastiCache </td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="fragment grow">Or pay-as-you-go solutions like AWS Lambda or AWS API Gateway...</p>
+				</section>
+
+				<section>
+					<h2>AWS Rich Application Services</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Web App Need</th>
+								<th>AWS Service</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Messaging</td>
+								<td>SQS, SNS, SWF</td>
+							</tr>
+							<tr>
+								<td>Payments Gateway</td>
+								<td>Devpay</td>
+							</tr>
+							<tr>
+								<td>Analytics</td>
+								<td>EMR, Kinesis</td>
+							</tr>
+							<tr>
+								<td>Monitoring</td>
+								<td>Cloudwatch</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="fragment grow">Or pay-as-you-go solutions like AWS Lambda or AWS API Gateway...</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
