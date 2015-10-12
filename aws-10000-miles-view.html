@@ -430,23 +430,68 @@
 						<tbody>
 							<tr>
 								<td>Computation</td>
-								<td>ECS, EC2 (ECR)</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											ECS, EC2 (ECR)
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Scaling</td>
-								<td>Elastic Load Balancing, Auto Scaling</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											Elastic Load Balancing, Auto Scaling
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Storage</td>
-								<td>S3, EBS, EFS, AWS Store Gateway, Amazon Glacier</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											S3, EBS, EFS, AWS Store Gateway, Amazon Glacier
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>CDN</td>
-								<td>Cloudfront</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											Cloudfront
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Database</td>
-								<td>RDS (RMS), Amazon DynamoDB, Amazon ElastiCache </td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											RDS (RMS), Amazon DynamoDB, Amazon ElastiCache
+										</span>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -480,6 +525,43 @@
 							</tr>
 						</tbody>
 					</table>
+				</section>
+
+				<section id="messaging">
+					<section>
+						<h2>Messaging</h2>
+					</section>
+
+					<section>
+						<h2>Amazon SQS</h2>
+						<h4>Queueing</h4>
+						<blockquote cite="https://aws.amazon.com/sqs/" style="width:100%">
+							&ldquo;Amazon Simple Queue Service (SQS) is a fast, reliable,
+							scalable, fully managed message queuing service.&rdquo;
+						</blockquote>
+						<ul>
+							<li>CreateQueue</li>
+							<li>SendMessage</li>
+							<li>ReceiveMessage</li>
+							<li>ChangeMessageVisibility</li>
+							<li>DeleteMessage</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Workflow</h2>
+					</section>
+
+					<section>
+						<h2>Amazon SWF</h2>
+						<h4>Queueing</h4>
+						<blockquote cite="https://aws.amazon.com/sqs/" style="width:100%">
+							&ldquo;Amazon Simple Workflow Service (SWF) helps developers build, run, and scale
+							background jobs that have parallel or sequential steps.
+							You can think of Amazon SWF as a fully-managed state tracker
+							and task coordinator in the Cloud.&rdquo;
+						</blockquote>
+					</section>
 				</section>
 
 				<section>
