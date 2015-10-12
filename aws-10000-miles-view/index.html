@@ -84,6 +84,9 @@
 							high performance container management service that supports Docker containers
 							and allows you to easily run applications on a managed cluster of Amazon EC2 instances&rdquo;
 						</blockquote>
+						<ul>
+							<li>integrated with Amazon EC2 Container Registry (ECR)</li>
+						</ul>
 					</section>
 
 					<section>
@@ -91,17 +94,30 @@
 					</section>
 
 					<section>
-						<h2>Amazon Auto Scaling</h2>
-						<ul>
-							<li>increase capacity during demand spikes</li>
-							<li>decrease capacity during lulls to reduce costs</li>
-						</ul>
+						<h2>Elastic Load Balancing</h2>
+						<blockquote cite="https://aws.amazon.com/elasticloadbalancing/">
+							&ldquo;Elastic Load Balancing automatically distributes
+							incoming application traffic across multiple Amazon EC2 instances
+							in the cloud. It enables you to achieve greater levels of
+							fault tolerance in your applications, seamlessly providing the
+							required amount of load balancing capacity needed to
+							distribute application traffic.&rdquo;
+						</blockquote>
+					</section>
+
+					<section>
+						<h2>Auto Scaling</h2>
 						<blockquote cite="https://aws.amazon.com/autoscaling/">
 							&ldquo;Auto Scaling helps you maintain application availability
 							and allows you to scale your Amazon EC2 capacity up or down
 							automatically according to conditions you define.&rdquo;
 						</blockquote>
+						<ul>
+							<li>increase capacity during demand spikes</li>
+							<li>decrease capacity during lulls to reduce costs</li>
+						</ul>
 					</section>
+
 				</section>
 
 				<section id="storage">
@@ -144,7 +160,7 @@
 							</tr>
 							<tr>
 								<td>Scaling</td>
-								<td>Autoscale</td>
+								<td>Elastic Load Balancing, Auto Scaling</td>
 							</tr>
 							<tr>
 								<td>Storage</td>
