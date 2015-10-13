@@ -762,13 +762,30 @@
 					</section>
 				</section>
 
-				<section>
-					<h2>Lessons learned</h2>
-					<ul>
-						<li>Elastic IPs limited to 5 by default - you can request more if needed. But you have to pay for reserved IPs not associated to a EC2 instance</li>
-						<li>AWS Resource limits - you have a stopped instance and when you want to bring it up there no AWS resource availables in this AZ - If you pay St Peter sings - you can reserve resources to ensure availability</li>
-						<li>Stopping an EC2 instance causes any data on the ephemeral storage of your instance to be lost</li>
-						<li>Deleting an instance is not immediately reflected in the dashboard - don't panic!</li>
+				<section id="lessons-learned">
+					<section>
+						<h2>Hints & Lessons learned</h2>
+					</section>
+
+					<section>
+						<p>Elastic IPs are limited by default to 5, but you can request more if needed.</p>
+						</p>Be aware that you'll have to pay for any reserved IP not associated to a EC2 instance.</p>
+					</section>
+
+					<section>
+						<p>AWS Resources are limited.</p>
+						<p>It may happen that you have a stopped instance and when you want to bring it up there no AWS resource available in your AZ.</p>
+						<p>You can work around this limitation by r€$€rving resources in order to ensure availability.</p>
+					</section>
+
+					<section>
+						<p>Stopping an EC2 instance causes any data on the ephemeral storage to be lost</p>
+					</section>
+
+					<section>
+						<p>Deleting an instance is not immediately reflected in the AWS Console Dashboard.</p>
+						<p>Don't panic! ;)</p>
+					</section>
 				</section>
 			</div>
 
