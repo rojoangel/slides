@@ -70,19 +70,20 @@
 						<h2>Where is AWS "located"?</h2>
 						<p>Amazon Web Services (AWS) infrastructure is expanded around the world
 						   in order guarantee lower latency, high troughput and ensure that data
-						   resides only in the choosen Region by the customer.</p>
+						   resides only in the chosen Region by the customer.</p>
 
 					</section>
-					<section>
-						<h2>Regions</h2>
-							<img style="width: 75%; height: 75%;" src="https://d0.awsstatic.com/logos/compliance/regions.jpg">
-						<small>
-							<ul>
+					<section data-background="https://d0.awsstatic.com/logos/compliance/regions.jpg">
+						<div class="fragment fade-in" data-fragment-index="0">
+							<div class="fragment grow" data-fragment-index="0">
+							<h2 style="color: #000;">Regions</h2>
+							<ul style="color: #000;">
 								<li>11 Regions</li>
 								<li>30 Availability Zones</li>
 								<li>Not all AZ have the same services</li>
 							</ul>
-						</small>
+							</div>
+						</div>
 					</section>
 
 					<section>
@@ -99,8 +100,8 @@
     				<source data-src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
 					</video>
 				</section>
-
 				<section>
+
 					<h2>Web App Infrastructure Needs</h2>
 					<table>
 						<thead>
@@ -630,6 +631,14 @@
 					<p class="fragment grow">Or pay-as-you-go solutions like AWS Lambda or AWS API Gateway...</p>
 				</section>
 
+				<section>
+					<h2>Lessons learned</h2>
+					<ul>
+						<li>Elastic IPs limited to 5 by default - you can request more if needed. But you have to pay for reserved IPs not associated to a EC2 instance</li>
+						<li>AWS Resource limits - you have a stopped instance and when you want to bring it up there no AWS resource availables in this AZ - If you pay St Peter sings - you can reserve resources to ensure availability</li>
+						<li>Stopping an EC2 instance causes any data on the ephemeral storage of your instance to be lost</li>
+						<li>Deleting an instance is not immediately reflected in the dashboard - don't panic!</li>
+				</section>
 			</div>
 
 		</div>
