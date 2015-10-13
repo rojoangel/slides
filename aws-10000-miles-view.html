@@ -66,38 +66,149 @@
 				</section>
 
 				<section>
-					<section>
-						<h2>Where is AWS "located"?</h2>
-						<p>Amazon Web Services (AWS) infrastructure is expanded around the world
-						   in order guarantee lower latency, high troughput and ensure that data
-						   resides only in the choosen Region by the customer.</p>
+					<h2>Where is AWS "located"?</h2>
+					<p>Amazon Web Services (AWS) infrastructure is expanded around the world
+					   in order guarantee lower latency, high troughput and ensure that data
+					   resides only in the chosen Region by the customer.</p>
+				</section>
 
-					</section>
-					<section>
-						<h2>Regions</h2>
-							<img style="width: 75%; height: 75%;" src="https://d0.awsstatic.com/logos/compliance/regions.jpg">
-						<small>
+				<section data-background="#fff">
+					<section data-background="https://d0.awsstatic.com/logos/compliance/regions.jpg">
+						<div class="fragment fade-in" data-fragment-index="0">
+							<div class="fragment grow" data-fragment-index="0">
+							<h2>Regions</h2>
 							<ul>
 								<li>11 Regions</li>
 								<li>30 Availability Zones</li>
 								<li>Not all AZ have the same services</li>
 							</ul>
-						</small>
+							</div>
+						</div>
 					</section>
 
 					<section>
-						<h2>Regions – Availability Zones North America</h2>
+						<h2>Regions – North America</h2>
+						<div style="width: 20%; float: left;">
+								<img data-src="https://d0.awsstatic.com/global-infrastructure/gi-map-na-111912.jpg" style="background-color: #fff;"/>
+						</div>
+						<div style="width: 80%; float: right;">
+							<div style="width: 50%; float: left;">
+								<small>
+									<p>
+										<b>US East (Northern Virginia) Region</b><br/>
+										EC2 Availability Zones: 5<br/>
+										Launched 2006
+									</p>
+							 </small>
+							 <small>
+									<p>
+										<b>US West (Northern California) Region</b><br/>
+										EC2 Availability Zones: 3<br/>
+										Launched 2009
+									</p>
+								</small>
+							</div>
+							<div style="width: 50%; float: right;">
+								<small>
+									<p>
+										<b>US West (Oregon) Region</b><br/>
+										EC2 Availability Zones: 3<br/>
+										Launched 2011
+									</p>
+								</small>
+								<small>
+									<p>
+										<b>AWS GovCloud (US) Region</b><br/>
+										EC2 Availability Zones: 2<br/>
+										Launched 2011
+									</p>
+								</small>
+							</div>
+						</div>
 					</section>
-				</section>
 
-				<section data-background-video="https://s3.eu-central-1.amazonaws.com/eebcn-bucket/AWS_launching_EC2_instance.mp4" data-background-color="#000000">
-				</section>
+					<section>
+						<h2>Regions – South America</h2>
+						<div style="width: 50%; float: left;">
+								<img data-src="https://d0.awsstatic.com/global-infrastructure/gi-map-sa-010714.png" style="background-color: #fff;"/>
+						</div>
+						<div style="width: 50%; float: right;">
+							<small>
+								<p>
+									<b>São Paulo Region</b><br/>
+									EC2 Availability Zones: 3<br/>
+									Launched 2011
+								</p>
+						 </small>
+						</div>
+					</section>
 
-				<section>
-					<p>test</p>
-					<video>
-    				<source data-src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
-					</video>
+					<section>
+						<h2>Regions – EMEA</h2>
+						<div style="width: 20%; float: left;">
+								<img data-src="https://d0.awsstatic.com/global-infrastructure/gi-map-eu-10232014.png" style="background-color: #fff;"/>
+						</div>
+						<div style="width: 80%; float: right;">
+							<div style="width: 50%; float: left;">
+								<small>
+									<p>
+										<b>EU (Ireland) Region</b><br/>
+										EC2 Availability Zones: 3<br/>
+										Launched 2007
+									</p>
+							 </small>
+						 	</div>
+							<div style="width: 50%; float: left;">
+							 <small>
+									<p>
+										<b>EU (Frankfurt) Region</b><br/>
+										EC2 Availability Zones: 2<br/>
+										Launched 2014
+									</p>
+								</small>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Regions – Asia Pacific</h2>
+						<div style="width: 20%; float: left;">
+								<img data-src="https://d0.awsstatic.com/global-infrastructure/gi-map-pr-063014.png" style="background-color: #fff;"/>
+						</div>
+						<div style="width: 80%; float: right;">
+							<div style="width: 50%; float: left;">
+								<small>
+									<p>
+										<b>Asia Pacific (Singapore) Region</b><br/>
+										EC2 Availability Zones: 2<br/>
+										Launched 2010
+									</p>
+							 </small>
+							 <small>
+									<p>
+										<b>US Asia Pacific (Tokyo) Region</b><br/>
+										EC2 Availability Zones: 3<br/>
+										Launched 2011
+									</p>
+								</small>
+							</div>
+							<div style="width: 50%; float: right;">
+								<small>
+									<p>
+										<b>Asia Pacific (Sydney) Region</b><br/>
+										EC2 Availability Zones: 2<br/>
+										Launched 2012
+									</p>
+								</small>
+								<small>
+									<p>
+										<b>China (Beijing) Region</b><br/>
+										EC2 Availability Zones: 2<br/>
+									</p>
+								</small>
+							</div>
+						</div>
+					</section>
 				</section>
 
 				<section>
@@ -136,7 +247,36 @@
 
 				<section id="computation">
 					<section>
-						<h2>Computation</h2>
+						<h2>AWS Computation Services</h2>
+					</section>
+
+					<section>
+						<table>
+							<thead>
+								<tr>
+									<th>Category</th>
+									<th>AWS Service</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Virtual Servers</td>
+									<td>Amazo EC2</td>
+								</tr>
+								<tr>
+									<td>Containers</td>
+									<td>Amazon EC3, Amazon ECR</td>
+								</tr>
+								<tr>
+									<td>1-Click Web App Deployment</td>
+									<td>AWS Elastic Beanstalk</td>
+								</tr>
+								<tr>
+									<td>Scaling</td>
+									<td>Elastic Load Balancing, Auto Scaling</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 
 					<section>
@@ -200,9 +340,14 @@
 							<li>decrease capacity during lulls to reduce costs</li>
 						</ul>
 					</section>
+				</section>
+
+				<section id="storage">
+					<section>
+						<h2>AWS Storage and Content Delivery Services</h2>
+					</section>
 
 					<section>
-						<h2>AWS Computation Services</h2>
 						<table>
 							<thead>
 								<tr>
@@ -212,29 +357,35 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>Virtual Servers</td>
-									<td>Amazo EC2</td>
+									<td>Object Storage</td>
+									<td>Amazon S3</td>
 								</tr>
 								<tr>
-									<td>Containers</td>
-									<td>Amazon EC3, Amazon ECR</td>
+									<td>Block Storage</td>
+									<td>Amazon EBS</td>
 								</tr>
 								<tr>
-									<td>1-Click Web App Deployment</td>
-									<td>AWS Elastic Beanstalk</td>
+									<td>File System Storage</td>
+									<td>Amazon Elastic File System (EFS)</td>
 								</tr>
 								<tr>
-									<td>Scaling</td>
-									<td>Elastic Load Balancing, Auto Scaling</td>
+									<td>CDN</td>
+									<td>Amazon CloudFront</td>
+								</tr>
+								<tr>
+									<td>Archive Storage</td>
+									<td>Amazon Glacier</td>
+								</tr>
+								<tr>
+									<td>Integrated Storage</td>
+									<td>AWS Storage Gateway</td>
+								</tr>
+								<tr>
+									<td>Data Transport</td>
+									<td>AWS Import/Export</td>
 								</tr>
 							</tbody>
 						</table>
-					</section>
-				</section>
-
-				<section id="storage">
-					<section>
-						<h2>Storage and Content Delivery</h2>
 					</section>
 
 					<section>
@@ -311,9 +462,14 @@
 							<li><b>Gateway-Virtual Tape Library (VTL)</b>: can be backed by Amazon S3 or Amazon Glacier</li>
 						</ul>
 					</section>
+				</section>
+
+				<section id="database">
+					<section>
+						<h2>AWS Database Services</h2>
+					</section>
 
 					<section>
-						<h2>AWS Storage and Content Delivery Services</h2>
 						<table>
 							<thead>
 								<tr>
@@ -323,41 +479,27 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>Object Storage</td>
-									<td>Amazon S3</td>
+									<th>Relational</th>
+									<th>Amazon RDS</th>
 								</tr>
 								<tr>
-									<td>Block Storage</td>
-									<td>Amazon EBS</td>
+									<td>Database Migration</td>
+									<td>AWS Database Migration Service</td>
 								</tr>
 								<tr>
-									<td>File System Storage</td>
-									<td>Amazon Elastic File System (EFS)</td>
+									<td>NoSQL</td>
+									<td>Amazon DynamoDB</td>
 								</tr>
 								<tr>
-									<td>CDN</td>
-									<td>Amazon CloudFront</td>
+									<td>Caching</td>
+									<td>Amazon ElastiCache</td>
 								</tr>
 								<tr>
-									<td>Archive Storage</td>
-									<td>Amazon Glacier</td>
-								</tr>
-								<tr>
-									<td>Integrated Storage</td>
-									<td>AWS Storage Gateway</td>
-								</tr>
-								<tr>
-									<td>Data Transport</td>
-									<td>AWS Import/Export</td>
+									<td>Data Warehouse</td>
+									<td>Amazon Redshift</td>
 								</tr>
 							</tbody>
 						</table>
-					</section>
-				</section>
-
-				<section id="database">
-					<section>
-						<h2>Database</h2>
 					</section>
 
 					<section>
@@ -416,40 +558,6 @@
 							<li>Memcached</li>
 							<li>Redis</li>
 						</ul>
-					</section>
-
-					<section>
-						<h2>AWS Database Services</h2>
-						<table>
-							<thead>
-								<tr>
-									<th>Category</th>
-									<th>AWS Service</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>Relational</th>
-									<th>Amazon RDS</th>
-								</tr>
-								<tr>
-									<td>Database Migration</td>
-									<td>AWS Database Migration Service</td>
-								</tr>
-								<tr>
-									<td>NoSQL</td>
-									<td>Amazon DynamoDB</td>
-								</tr>
-								<tr>
-									<td>Caching</td>
-									<td>Amazon ElastiCache</td>
-								</tr>
-								<tr>
-									<td>Data Warehouse</td>
-									<td>Amazon Redshift</td>
-								</tr>
-							</tbody>
-						</table>
 					</section>
 				</section>
 
@@ -537,101 +645,136 @@
 					<table>
 						<thead>
 							<tr>
-								<th>Web App Need</th>
+								<th>Need</th>
 								<th>AWS Service</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Messaging</td>
-								<td style="text-align:right">?</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											SQS, SNS, SWF
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Payments Gateway</td>
-								<td style="text-align:right">?</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											Devpay
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Analytics</td>
-								<td style="text-align:right">?</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											EMR, Kinesis
+										</span>
+									</div>
+								</td>
 							</tr>
 							<tr>
 								<td>Monitoring</td>
-								<td style="text-align:right">?</td>
+								<td>
+									<div style="position:relative" >
+										<span class="fragment fade-out" style="position:absolute;" data-fragment-index="0">
+											?
+										</span>
+										<span class="fragment fade-in" data-fragment-index="0">
+											Cloudwatch
+										</span>
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>
 				</section>
 
-				<section id="messaging">
+				<section id="management">
 					<section>
-						<h2>Messaging</h2>
+						<h2>AWS Management</h2>
 					</section>
 
 					<section>
-						<h2>Amazon SQS</h2>
-						<h4>Queueing</h4>
-						<blockquote cite="https://aws.amazon.com/sqs/" style="width:100%">
-							&ldquo;Amazon Simple Queue Service (SQS) is a fast, reliable,
-							scalable, fully managed message queuing service.&rdquo;
-						</blockquote>
+						<h2>AWS Management Options</h2>
 						<ul>
-							<li>CreateQueue</li>
-							<li>SendMessage</li>
-							<li>ReceiveMessage</li>
-							<li>ChangeMessageVisibility</li>
-							<li>DeleteMessage</li>
+							<li>AWS Management Console (Console Dashboard)</li>
+							<li>AWS Command Line Interface (AWS CLI)</li>
+							<li>Command Line Tools (Single Service Management)</li>
+							<li>AWS Software Development Kits (SDK)</li>
+							<li>Query APIs</li>
 						</ul>
 					</section>
 
 					<section>
-						<h2>Workflow</h2>
+						<h2>AWS Console Dashboard</h2>
+						<img data-src="https://drive.google.com/uc?export=view&id=0B4gDdIUTVygXRVZIVlpWOFUza3M"/>
+						<p>Only displays available services in the current Region</p>
 					</section>
 
 					<section>
-						<h2>Amazon SWF</h2>
-						<h4>Queueing</h4>
-						<blockquote cite="https://aws.amazon.com/sqs/" style="width:100%">
-							&ldquo;Amazon Simple Workflow Service (SWF) helps developers build, run, and scale
-							background jobs that have parallel or sequential steps.
-							You can think of Amazon SWF as a fully-managed state tracker
-							and task coordinator in the Cloud.&rdquo;
-						</blockquote>
+						<h2>AWS Billing & Cost Management</h2>
+						<img data-src="https://drive.google.com/uc?export=view&id=0B4gDdIUTVygXMEx3WDhFQ0VZM2M"/>
+					</section>
+
+					<section>
+						<h2>Demo Time</h2>
+					</section>
+
+					<section data-background-video="https://s3.eu-central-1.amazonaws.com/eebcn-bucket/AWS_launching_EC2_instance.mp4" data-background-color="#000000">
+					</section>
+				</section>
+
+				<section id="lessons-learned">
+					<section>
+						<h2>Hints & Lessons learned</h2>
+					</section>
+
+					<section>
+						<p>Elastic IPs are limited by default to 5, but you can request more if needed.</p>
+						</p>Be aware that you'll have to pay for any reserved IP not associated to a EC2 instance.</p>
+					</section>
+
+					<section>
+						<p>AWS Resources are limited.</p>
+						<p>It may happen that you have a stopped instance and when you want to bring it up there no AWS resource available in your AZ.</p>
+						<p>You can work around this limitation by r€$€rving resources in order to ensure availability.</p>
+					</section>
+
+					<section>
+						<p>Stopping an EC2 instance causes any data on the ephemeral storage to be lost</p>
+					</section>
+
+					<section>
+						<p>Deleting an instance is not immediately reflected in the AWS Console Dashboard.</p>
+						<p>Don't panic! ;)</p>
 					</section>
 				</section>
 
 				<section>
-					<h2>Rich Web App Service Needs</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Web App Need</th>
-								<th>AWS Service</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Messaging</td>
-								<td>SQS, SNS, SWF</td>
-							</tr>
-							<tr>
-								<td>Payments Gateway</td>
-								<td>Devpay</td>
-							</tr>
-							<tr>
-								<td>Analytics</td>
-								<td>EMR, Kinesis</td>
-							</tr>
-							<tr>
-								<td>Monitoring</td>
-								<td>Cloudwatch</td>
-							</tr>
-						</tbody>
-					</table>
-					<p class="fragment grow">Or pay-as-you-go solutions like AWS Lambda or AWS API Gateway...</p>
+					<h2>Questions?</h2>
 				</section>
 
+				<section>
+					<h2>Thank you!</h2>
+				</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
